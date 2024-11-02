@@ -1,1 +1,107 @@
+<!DOCTYPE html>
+<html lang="ja">
 
+<head>
+    <title>pokemogukunn</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="https://pokemogukunns.github.io/yuki-math/css/pure-min.css">
+    <link rel="stylesheet" href="https://pokemogukunns.github.io/yuki-math/css/grids-responsive-min.css">
+    <link rel="stylesheet" href="https://pokemogukunns.github.io/yuki-math/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://pokemogukunns.github.io/yuki-math/css/default.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+
+
+
+<body class="no-theme">
+    <span style="display:none" id="dark_mode_pref"></span>
+            <div class="pure-g h-box">
+                <div class="pure-u-2-3">
+                    <div class="channel-profile">
+                        <img src="https://yt3.googleusercontent.com/NWVmz_YlHY3ygJQwA2w6dPqbOQN7Ih4jb8DV09HnXe-lK8KQFZY9rPUOLNrKOsoAOHwf0gt5wAE=s512-c-k-c0x00ffffff-no-rj">
+                        <span>Marunouchi / まるのうち</span>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="h-box">
+                <div id="descriptionWrapper">
+                    <p><span style="white-space:pre-wrap">
+</span></p>
+                </div>
+            </div>
+            <div class="pure-g">
+        
+                <div class="pure-u-1 pure-u-md-1-4">
+                    <div class="h-box">
+                        
+                        <a style="width:100%" href="/Video/osse-wa">
+                            <div class="thumbnail">
+                                <img loading="lazy" class="thumbnail" src="/Video/img/osse-wa.png" onerror="document.cookie = 'proxy=True;max-age=2592000;';">
+                                <p class="length">おっせいわ</p>
+                            </div>
+                            <!--<p dir="auto">{{ result['title'] }}</p>
+                            https://img.youtube.com/vi/Video_ID/0.jpg
+                            これはサムネのURL
+                            -->
+                        </a>
+                        <div class="video-card-row flexible">
+                            <!--<a href="/channel/{{result['authorId']}}">{{result["author"]}}</a>-->
+                        </div>
+                        <div class="video-card-row flexible">
+                            <div class="flex-left">
+                                    <!--<p class="video-data" dir="auto">{{result["published"]}}</p>-->
+                            </div>
+                        </div>
+                        <!--{% elif result["type"] == "channel" %}-->
+        
+        
+                            <!--<a href="/Video/channel/pokemogukunn">
+                                
+                                    <center>
+                                        <img loading="lazy" tabindex="-1" style="width:56.25%" src="https://yt3.googleusercontent.com/JfIOvUOIeCKNxOCbUh50pYMTygI_H4oF6pbcdBw_ge3EzuL15BxuDsp24qtEpSM-jZCftiqS=s512-c-k-c0x00ffffff-no-rj">
+                                    </center>
+                                
+                                <!--<p dir="auto">{{result["author"]}}</p>-->
+                            </a>-->
+                        <!--{% elif result["type"] == "playlist" %}-->
+                        <!--<a style="width:100%" href="/Video/playlist/pokemogukunn">
+                
+                            <div class="thumbnail">
+                                <img loading="lazy" tabindex="-1" class="thumbnail" src="/Video/img/image.png">
+                                <p class="length">1個の動画</p>
+                            </div>-->
+                        
+                        <!--<p dir="auto"></p>-->
+                    <!--</a>-->
+                        <!--<a style="width:100%" href="/Video/playlist/gurumelace">
+                
+                            <div class="thumbnail">
+                                <img loading="lazy" tabindex="-1" class="thumbnail" src="/Video/img/image.png">
+                                <p class="length">11個の動画</p>
+                            </div>
+                    </a>-->
+                        <!--//{% endif %}-->
+                    </div>
+                </div>
+              <!--//{% endfor %}-->
+            </div>
+        </div>
+    </div>
+
+    <script>$('#searchbox').autocomplete({
+        source: function (request, response) {
+            {
+        var url = "/suggest?keyword="+ request.term
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", url);
+        xhr.onload = function() {
+            response(JSON.parse(xhr.responseText));
+        }
+        xhr.send();
+    }},delay:300});</script>
+</body>
+
+</html>
